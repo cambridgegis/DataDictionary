@@ -4,13 +4,13 @@ This is the XSL being used to generate the GIS Data Dictionary pages from ArcSDE
 
 The SDE metadata is stored as an XML field (in SQL Server anyway) called Documentation in the GDB_Items table, so it’s easy to get using the feature class name:
 
-```sql  
+```sql
 SELECT Documentation  
 FROM  GDB_ITEMS  
 WHERE PhysicalName = 'blah'  
-'''  
+```
 
-Here’s what we are using right now for fields:
+Here's what we are using right now for fields:
 	
 | Field | Source in XML (from <metadata>) |  
 | ----- | ------------------------------- |  
